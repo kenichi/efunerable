@@ -3,6 +3,15 @@ module CustomEnumerable
   # Returns a new array with the results of running block once for every element
   # in enum.
   #
+  # examples:
+  #    [1,2,3].map {|n| n * n}
+  #    #=> [1,4,9]
+  #
+  #    ['alice', 'bob', 'carol'].map do |name|
+  #      "hi " + name
+  #    end
+  #    #=> ['hi alice', 'hi bob', 'hi carol']
+  #
   def map &block
   end
 
